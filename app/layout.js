@@ -1,5 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({subsets}) // changing the font of the ui
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
