@@ -1,16 +1,28 @@
-import {SignedIn , SignedOut ,SignInButton , SignUpButton , UserButton} from "@clerk/nextjs"
-import { Button } from "@/components/ui/button";
+import {SignedIn , SignedOut ,SignInButton , UserButton} from "@clerk/nextjs"
+import Link from "next/link";
+import Image from "next/image";
 export const Header = () => {
   return (
-    <div>
-            <Button><SignedOut>   
+    <div className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 border-b ">
+      <nav className="container mx-auto px-4 flex items-center justify-between">
+        <Link href="/">
+        <Image
+        src={"/logo.png"}
+        alt="logo"
+        width={150}
+        height={200}
+        />
+        </Link>
+      
+            <SignedOut>   
               <SignInButton />
-              <SignUpButton />
-            </SignedOut></Button>
+            </SignedOut>
             <SignedIn>
               <UserButton /> 
             </SignedIn>  
-    </div> //intergrated the signup page using clerk
+            </nav>
+    </div>
+     //intergrated the signup page using clerk
   );
 };
 export default Header ;

@@ -1,6 +1,5 @@
-import { Button } from "../components/ui/button";
+
 export default function Home() {
-  return (
-    <Button variant="destructive">Subscriped to the shadcn ui</Button>
-  );
-}
+  return <div></div>
+  };
+
