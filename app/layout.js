@@ -3,7 +3,9 @@ import "./globals.css";
 import Header from '@/components/ui/header'
 import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Inter({subsets : ["latin"]})// changing the font of the ui
+const inter = Inter({subsets : ["latin"],
+  weight:['100','400','700','900'],
+})// changing the font of the ui
 
 export const metadata = {
   title: "Welth",
@@ -12,23 +14,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider>  
     <html lang="en">
       <body
-        className={`${inter.className}`}
+        className={`${inter.className}`} 
       >{/* header */}
-      <Header/>
-      <main className="min-h-screen">
+      <Header/> 
+      <main className="min-h-screen pt-14">
         {children}
       </main> 
         {/* footer */}
-        <footer className="bg-blue-50 py-12">
-          <div className="container mx-auto px-4 text-center text-gray-600">
+        <footer className="bg-black/40 py-6">
+          <div className="container mx-auto px-4 text-center text-white">
             <p>Made by Praveen-Luci </p>
           </div>
         </footer>
       </body>
     </html>
-    </ClerkProvider>
+    </ClerkProvider> // intergrated the application into clerk
   );
 };
