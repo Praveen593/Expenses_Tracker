@@ -16,7 +16,7 @@ const HeroSection = () => {
             Effortlessly Track. Instantly Analyze. Smartly Save. With our cutting-edge AI, managing your money is no longer a chore<br/> – it's a breeze.
             </p>
             <div className="mt-5 flex justify-center  ">
-              <Button  size="lg" variant="outline" className="md:px-7 md:py-6 md:text-xl text-sm hover:duration-300 hover:bg-transparent hover:text-white hover:shadow-2xl ">
+              <Button  size="lg" variant="outline" className="md:px-7 md:py-6 md:text-xl text-sm hover:duration-300 hover:bg-transparent hover:text-white hover:shadow-2xl animate-bounce">
               Get Started
               </Button>
             </div>
