@@ -5,8 +5,8 @@ export default function Home() {
   return(
      <div>
         <HeroSection/>
-
-        <section className="py-20">
+        <div className="bg-black">
+        <section className="py-20 ">
           <div className="text-white mx-auto text-2xl md:text-3xl lg:text-4xl text-center font-bold mb-11 ">
             <h2 >Everything you need to manage your finances</h2>
           </div>
@@ -18,7 +18,7 @@ export default function Home() {
                     <CardContent className="pt-3"><div>{featuresData.icon}</div></CardContent>
                     <CardContent className="text-xl font-semibold "><div>{featuresData.title}</div></CardContent>
                     <CardContent className="text-neutral-500 -mt-4"><div>{featuresData.description}</div></CardContent>
-                    </Card>s
+                    </Card>
                 </div>
               ))}
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+      </div>
         
     </div>
     

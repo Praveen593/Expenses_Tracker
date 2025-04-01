@@ -20,7 +20,7 @@ const HeroSection = () => {
               Get Started
               </Button>
             </div>
-            <div className="-z-20 flex absolute top-20 opacity-50 ">
+            <div className="-z-20 flex absolute top-20  ">
               <div>
                 <Image 
                 src={HeroImg}
