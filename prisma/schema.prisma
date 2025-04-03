@@ -57,7 +57,7 @@ model Transaction{
     description         String?
     date                DateTime
     category            String
-    receiptUrl          String
+    receiptUrl          String?
     isRecurring         Boolean             @default(false)
     recurringIntervel   RecurringInterval?
     nextRecurringData   DateTime?
