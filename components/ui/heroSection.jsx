@@ -12,7 +12,7 @@ const HeroSection = () => {
   return(
    <div className="pb-20 mt-40 ">
         <div className="py-16 md:py-10 " >
-            <h1 className="px-10 pb-2 text-5xl md:text-6xl lg:text-8xl text-center text-transparent bg-gradient-to-br from-white to-green-500 tracking-tighter bg-clip-text font-bold cursor-default">
+            <h1 className="px-10 pb-2 text-5xl md:text-6xl lg:text-8xl text-center text-transparent bg-gradient-to-t from-green-500 to-blue-500 tracking-tighter bg-clip-text font-bold cursor-default">
 
               Transform Your Finances with <br/>AI Magic
             </h1>

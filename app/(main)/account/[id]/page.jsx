@@ -16,10 +16,10 @@ export default async function AccountPage(props) {
   const { transactions, ...account } = accountData;
 
   return (
-    <div className="space-y-8 px-5">
+    <div className="space-y-8 pt-5 px-5">
       <div className="flex gap-4 items-end justify-between">
         <div>
-          <h1 className="text-5xl sm:text-6xl font-bold tracking-tight gradient-title capitalize">
+          <h1 className="text-5xl sm:text-6xl text-transparent bg-gradient-to-t from-green-500 to-blue-500 tracking-tighter bg-clip-text font-bold cursor-default  capitalize">
             {account.name}
           </h1>
           <p className="text-muted-foreground">
